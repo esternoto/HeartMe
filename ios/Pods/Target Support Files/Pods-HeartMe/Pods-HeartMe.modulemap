@@ -1,0 +1,6 @@
+module Pods_HeartMe {
+  umbrella header "Pods-HeartMe-umbrella.h"
+
+  export *
+  module * { export * }
+}

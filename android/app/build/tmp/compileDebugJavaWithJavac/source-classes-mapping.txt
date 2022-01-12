@@ -1,0 +1,14 @@
+com/heartme/MainActivity.java
+ com.heartme.MainActivity
+com/heartme/MainApplication.java
+ com.heartme.MainApplication
+ com.heartme.MainApplication$1
+com/heartme/BuildConfig.java
+ com.heartme.BuildConfig
+com/heartme/ReactNativeFlipper.java
+ com.heartme.ReactNativeFlipper
+ com.heartme.ReactNativeFlipper$1
+ com.heartme.ReactNativeFlipper$2
+ com.heartme.ReactNativeFlipper$2$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
