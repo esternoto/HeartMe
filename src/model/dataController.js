@@ -10,11 +10,13 @@ export const getTestData = async () => {
         const json = await response.json();
         if (json.bloodTestConfig) {
             json.bloodTestConfig.forEach(test => {
-                const testName = convertTestName(test.name);
-                testArr[testName] = [];
-                testArr[testName].key = testName;
-                testArr[testName].name = test.name;
-                testArr[testName].val = test.threshold;
+                if (test && test.name && test.threshold) {
+                    const testName = convertTestName(test.name);
+                    testArr[testName] = [];
+                    testArr[testName].key = testName;
+                    testArr[testName].name = test.name;
+                    testArr[testName].val = test.threshold;
+                }
             });
         } else {
             console.log('No have data');

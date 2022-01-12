@@ -1,7 +1,14 @@
 
 //remove space and swap to lowercase
 export const convertTestName = testName => {
-    return testName.trim().toLowerCase().replaceAll(/[ ]+/gi, '_');
+    if (typeof testName !== 'string') return testName;
+    else {
+        testName.trim().toLowerCase();
+        /*not support for old js version
+        if (testName.length > 1)
+            testName.replaceAll(/[ ]+/g, '_');*/
+        return testName;
+    }
 };
 
 export const validText = text => {
